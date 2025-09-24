@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+/* هاذي حق الصفحه الثانيه */
+.container {  
+  max-width: 1100px;
+  margin: auto;
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+.btn-primary:hover{
+  background: #e4b95b;
+} 
+.primary-text {
+  color: #e4b95b;
+}
+/* بدايية الصفحه الرئسيه */
+header {
+  height: 100vh;
+  background: url("B7.jpg") center center/cover no-repeat;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+#navbar img {
+  width: 80px;
+  margin-left: 100px;
+}
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #e4b95b;
+}
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.3);
+}
+header .content h1 {
+  font-size: 40px;
+  color: #fff;
+}
+header .content p {
+  color: #fff;
+  margin: 20px 0 40px;
+}
+header * {
+
+  z-index: 10;
+}
+/* بدايه الصفحه الثانية*/
+#offers {
+
+  background: url("B12.png") center center/cover fixed ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#offers .title{
+  
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#offers h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #e4b95b;
+}
+#offers .title p {
+  color: #ffffff;
+}
+#offers .offers-items {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: #fff;
+}
+#offers .offers-items img {
+  
+
+  height: 250px;
+  border-radius: 30%;
+  width: 350px;
+}
+#offers .offers-items h3 {
+  font-size: 25px; 
+  color: #fff;
+  margin: 15px ;
+}
+#offers .offers-items p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+/* نهاية الصفحة الثانية */
+
+/* بداية الصفحه الثالثه */
+#gallery {
+  background: url("b122.jpg") center center/cover fixed;
+  padding: 8rem 0 6rem;
+}
+#gallery h2 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#gallery .img-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#gallery .img-gallery img {
+  margin: 20px;
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+#gallery .img-gallery img:hover {
+  opacity: 1;
+}
+/* نهاية الصفحه الثالثه */
+
+/* بدايه الصفحه الرابعه*/
+#contact {
+  background: url("./img/g12.jpg") center center/cover;
+
+  /* background: #f4f2ed; */
+  padding: 5rem 0;
+}
+#contact .container {
+  width: 50%;
+  margin: auto;
+  border: 2px solid black;
+  margin-top: 120px;
+  border-radius: 30px;
+  padding: 15px;
+  height: 450px;
+  box-shadow: 10px 10px 75px rgb(232, 14, 207);
+}
+label{
+  color: #e4b95b;
+    display: block;
+    margin: 5px;
+    text-align: center;
+}
+input{
+  margin: auto;
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #8277c3;
+  padding: 10px 5px;
+  margin: 20px 0; 
+}
+input:focus{
+    background-color: brown;
+}
+#send{
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+}
+#send:hover{
+  background-color: rgb(179, 12, 212);
+}
+/* نهاية الصفحه الرابعه */

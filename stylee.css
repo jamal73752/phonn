@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    /* هاذا بيبعد الخط الي يطلع تحت العناصر */
+    text-decoration: none;
+    color: #fff;
+  }
+  /* هاذا بيبعد العلامه حق القائمه */
+  ul {
+    list-style: none;
+  }
+  /* هاذي حق الصفحه الثانيه */
+  .container {
+    
+    /* تصغر من حجم الصفحه الثانيه */
+    max-width: 1100px;
+    /* ترجعها بالوصط */
+    margin: auto;
+  }
+  
+  /* Utility Classes يعني الكلاس نستخدمه اكثر من مره */
+ 
+  /* هاذا بيعمل حلقه مربع علا الكلمه */
+  .btn-primary {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+  }
+  
+  .btn-primary:hover,
+  .btn-third{
+    background: #e4b95b;
+  } 
+  /* هاذا حق لون الخظ الي بوصط الكلمه */
+  .primary-text {
+    color: #e4b95b;
+  }
+  
+  /* بدايية الصفحه الرئسيه */
+  header {
+    /* هاذا يعني بيخلي الصفحه الرئسيه كلها بالوصط */
+    height: 100vh;
+    /*  بيخليه متتكررش     بيخليه بالوصط         هاذ حق الصوره الرئسيه               */          
+    background: url("./img/car.jpg") center center/cover no-repeat;
+    /*  */
+    position: relative;
+  }
+  
+  #navbar {
+    /* هاذا بيخلي العلامه والعناصر جمب بعض من فوق */
+    display: flex;
+    /* هاذا بيخلي العناصر والعلامه متفارقين */
+    justify-content: space-between;
+    /* خلي العناصر بالوصط */
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+  /* التحكم بالصوره العلامه */
+  #navbar img {
+    /* حجم الصوره */
+    width: 80px;
+    /* هاذا بيخلي مسافه من اليسار */
+    margin-left: 100px;
+  }
+  
+  nav ul {
+    /* هاذا بيخلي العناصر جمب بعض */
+    display: flex;
+    /* هاذا بيخلي مسافه من اليسار للعناص */
+    margin-right: 100px;
+  }
+  
+  nav ul li a {
+    /* هاذا بيتحك بالمسافه من فوق ومن تحت حق العاصر والصوره */
+    padding: 15px 20px;
+    /* هاذا بيتحكم بالون والسماكة الخط حق العناصر */
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    /* يعني لما اعمل الماوس فوق العناصر بيطلع خط حجمه2 ولونه */
+    border-bottom: 2px solid #e4b95b;
+  }
+  /* تتحكم بلكتابه حق الصوره الرئسيه */
+  header .content {
+    /* هاذا بيخلي الكلام جمب بعض */
+    display: flex;
+    /* هاذا بيخلي الكلام تحت بعض */
+    flex-direction: column;
+    /* هاذا بيخلي الكلام بالوصط */
+    align-items: center;
+    /* هاذا بيخلي الكلام بوصط الصفحه */
+    justify-content: center;
+    /* هاذا مكانه بيخلي بالوصط */
+    height: 75%;
+  }
+  /* هاذا يعني عمل نسخه من الصفحه الرئسيه*/
+  header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* خلي المحتوئ حقه غامض */
+    position: absolute;
+    /* تحكم بالون حق المحتوئ الوهمي */
+    background: rgb(0, 0, 0, 0.3);
+  }
+  /* هاذا حكم الكلام والونه حق الصفحه الي بالوصط */
+  header .content h1 {
+    font-size: 40px;
+    color: #fff;
+  }
+  /* هاذا مكانه لون الخط ويعطله فارق من فوق وتحت والجوانب صفر */
+  header .content p {
+    color: #fff;
+    margin: 20px 0 40px;
+  }
+  /* هاذا معناته بيخلي جميع المحتوى داخل الصفحه ضاهر */
+  header * {
+    z-index: 10;
+  }
+  
+  
+  #offers .title{
+    /* بيخلي الكتابه بالوصط */
+    text-align: center;
+    /* معناته بيخلي مسافه من تحت */
+    margin-bottom: 4rem;
+  }
+  /* بيطبق الاكواد علا الاثنين */
+  
+  #offers h2{  
+  /* حجم الخط */
+    font-size: 40px;
+    /* مسافه من تحت */
+    margin-bottom: 20px;
+  }
+  
+  /* بدايه الصفحه الثانية*/
+  #offers {
+    /* الارتفاع */
+    height: 80vh;
+    /* يضيف صوره ويجعلها بالوصظ ويخليها ثابته */
+    background: url("./img/offer-background.jpg") center center/cover fixed;
+    /* يخلي المحتوى بالوصط */
+    display: flex;
+   
+  }
+  /* يعمل لون للخط */
+  #offers h2 {
+    color: #e4b95b;
+  }
+  /* تحك بخط اكثر من 25 سنه  من الخبره */
+  #offers .title p {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  #offers .offers-items {
+    /* بيرجع الصور والكتابه جمب بعض */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* يخلي النص بلوصط */
+    text-align: center;
+    color: #fff;
+  }
+  /* حجم الصور يحليهن صغير */
+  #offers .offers-items img {
+    height: 200px;
+    border-radius: 50%;
+    width: 300px;
+  }
+  /* التحكم بخط اسم السياره */
+  #offers .offers-items h3 {
+    /* يكبر الخط */
+    font-size: 25px; 
+    color: #fff;
+    /* يعمل مسافه من فوق وتحت */
+    margin: 15px ;
+  }
+  /* التحكم بخط خصائص السياره */
+  #offers .offers-items p {
+    color: #fff;
+    /* حجم الخط */
+    font-size: 14px;
+    /* ضم الخط وخلوه صغير */
+    padding: 0 20px;
+    /* بيعطي مسافه تحت الخط */
+    margin-bottom: 15px;
+  }
+  /* التحكم برقم سعر السياره */
+  #offers .offers-items span {
+    /* يخلي خط الرقم ثقيل */
+    font-weight: 600;
+    /* يكبر الرقم */
+    font-size: 18px;
+    /*يعمل مسافه صغير علا الرقم الي جمبه */
+    margin-left: 5px;
+  }
+  
+  /* نهاية الصفحة الثانية */
+  
+  /* بداية الصفحه الثالثه */
+  
+  #gallery {
+    /* صوره خلفيه */
+    background: url("./img/offer-background.jpg") center center/cover;
+    /*  بيعمل مسافه بشغل الي بالصوره من فوق ومن الجوانب صفر ومن تحت  */
+    padding: 8rem 0 6rem;
+  }
+  #gallery h2 {
+    /* بيكبر حجم الخط */
+    font-size: 40px;
+    /* بيعمل لون للنص */
+    color: #fff;
+    /* بيخلي النص بالوصط */
+    text-align: center;
+    /* بيعمل مسافه من تحت */
+    margin-bottom: 30px;
+  }
+  
+  #gallery .img-gallery {
+    /* بيرجع الصور جمب بعض */
+    display: flex;
+    /* بيرجع الصور بالوصط */
+    justify-content: center;
+    /* بيساويهن بالتساوي */
+    flex-wrap: wrap;
+  }
+  
+  #gallery .img-gallery img {
+    /* مسافه بين كل صوره وصوره */
+    margin: 20px;
+    /* العرض حق الصور */
+    width: 280px;
+    /* الارتفاع حق الصوره */
+    height: 200px;
+    /* بيخلي الصور شكل مربع جميل */
+    border-radius: 15px;
+    /* منشان لما نعمل الماوس فوق الصوره توضح */
+    opacity: 0.8;
+  }
+  /* لما نعمل الماوس فوق الصور يوضحين */
+  #gallery .img-gallery img:hover {
+    opacity: 1;
+  }
+  /* نهاية الصفحه الثالثه */
+  
+  
+  
+  /* بدايه الصفحه الرابعه*/
+  #contact {
+    background: #f4f2ed;
+    /* مسافه من فوق */
+    padding: 5rem 0;
+  }
+  
+  #contact .container {
+    /* بيقرب المسافه قليل */
+    width: 50%;
+    /* يرجع للوصط */
+    margin: auto;
+    border: 2px solid black;
+    /* بيرجعه لوصط الصفحه */
+    margin-top: 150px;
+    /* حواف للزوايا */
+    border-radius: 30px;
+    /* الحواف يعني الكلام خله وصط الصندوق */
+    padding: 15px;
+    height: 450px;
+    box-shadow: 5px 5px 25px tomato;
+  
+  
+  }
+  
+  label{
+    /* خلي الاسم وصندوق تحته */
+      display: block;
+      /* مسافه بين الكلمه والصندوق */
+      margin: 5px;
+      /* رجع الكلام بالوصط */
+      text-align: center;
+  }
+  input{
+    margin: auto;
+    /* طول الصندوق الكتابه */
+    width: 100%;
+    /*  طول صندوق الكتابه*/
+    height: 30px;
+    /* حواف للزوايا الصندوق */
+    border-radius: 30px;
+    /* يعطي لون للمربع */
+    background-color: #8277c3;
+    /* يكبر حجم كل مربع */
+    padding: 10px 5px;
+      /* مسافه بين كل مربع */
+    margin: 20px 0;
+    
+  }
+  /* لاما امرر الماوس لفوق الصندوق يحمر */
+  
+  input:focus{
+      background-color: brown;
+  }
+  
+  #send{
+    /* العرض */
+    width: 150px;
+    /* خله يرجع للوصط */
+    display: block;
+    margin: auto;
+    /* مسافه من فوق */
+    margin-top: 15px;
+    /* لون المربع */
+    background-color: green;
+    /* لون الخط */
+    color: white;
+    /* حجم الخط */
+    font-weight: bold;
+    /* الطول */
+    height: 30px;
+  }
+  /* تما امرر المواس يحمر */
+  #send:hover{
+    background-color: brown;
+  }
+  
+  /* نهاية الصفحه الرابعه */
+  
